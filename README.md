@@ -1,8 +1,14 @@
-## contrato WSDL
+#### SIMPLESOAP
 
-https://medium.com/@dharshithasrimal/create-a-soap-web-service-a-step-by-step-tutorial-7b16a0ff8bf4
+Based on tutorial from https://medium.com/@dharshithasrimal/create-a-soap-web-service-a-step-by-step-tutorial-7b16a0ff8bf4
 
-## modelo de requisicao
+Tested on Tomcat v10.1
+
+## WSDL Contract
+
+http://localhost:8080/simplesoap/calculatorWebService?wsdl
+
+## Request Example
 
 ```
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sim="http://simplesoap/">
@@ -16,7 +22,7 @@ https://medium.com/@dharshithasrimal/create-a-soap-web-service-a-step-by-step-tu
 </soapenv:Envelope>
 ```
 
-## RESPOSTA
+## Response
 ```
 HTTP/1.1 200 
 Content-Type: text/xml;charset=utf-8
